@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Acceuil</title>
+ <link rel="stylesheet" href="Accueil.css">
+</head>
+<body>
+
+    <img src="logo.png" alt="logo" id="logo">
+    <nav id="fixed-nav"> 
+        <ul>
+            <li> <a href="#Presentation">Présentation</a></li>
+            <li> <a href="#Parcours">Parcours</a></li>
+            <li> <a href="#Projets">Projets</a></li>
+            <li> <a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="themeButton">Theme</button><br>
+    <div id="baniere"> </div>
+    <div id="loader-wrapper">
+      <div > <img src="logo.png" alt="logo" id="logo"></div>
+  </div>
+  <div id="Presentation">
+    <h1>~Présentation~</h1>
+    <img src="photo.png" alt="photo" id="photo">
+    <img src="textepresentation.png" alt="textepresentation">
+  </div>
+  <h1>   ~Parcours~</h1>
+  <div id="Parcours">
+    <img src="parcours.png" alt="parcours">
+  </div>
+  <h1>   ~Contact~</h1>
+  <div id="Contact">
+    <a href="https://twitter.com/Diarrafgd" target="_blank">  
+      <img src="twitter.png" alt="twitter">
+    </a>
+    <a href="https://www.linkedin.com/in/diarradieng04" target="_blank">  
+      <img src="link.png" alt="linkedin">
+    </a>
+    <a href="mailto:diarradieng062004@gmail.com">  
+      <img src="gmail.png" alt="Gmail">
+    </a>
+  </div>
+  <footer>
+    <p>Tous droits réservés © 2023</p>
+  </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+          const nav = document.querySelector("nav");
+          const scrollY = window.scrollY;
+      
+          if (scrollY > 100) { // Vous pouvez ajuster la valeur 100 selon votre préférence
+            nav.classList.add("fixed-nav");
+          } else {
+            nav.classList.remove("fixed-nav");
+          }
+        });
+      </script>
+     <script>
+      window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".fixed-nav");
+        const scrollY = window.scrollY;
+    
+        const maxOpacity = 1; // Opacité maximale
+        const minOpacity = 0.2; // Opacité minimale
+    
+        // Calcule l'opacité en fonction de la position de défilement
+        const opacity = 1 - (scrollY / 500); // Vous pouvez ajuster la valeur 500 selon vos préférences
+    
+        // Limite l'opacité entre minOpacity et maxOpacity
+        navbar.style.opacity = opacity < minOpacity ? minOpacity : (opacity > maxOpacity ? maxOpacity : opacity);
+      });
+    </script>
+    <script>
+      // Fonction pour masquer l'écran de chargement
+      function hideLoader() {
+          var loaderWrapper = document.getElementById('loader-wrapper');
+          loaderWrapper.style.display = 'none';
+      }
+  
+      // Exécutez la fonction lorsque le contenu a fini de charger
+      window.addEventListener('load', hideLoader);
+  </script>
+   <script>
+   // Récupérez le bouton et ajoutez un gestionnaire d'événement de clic
+   const themeButton = document.getElementById('themeButton');
+   themeButton.addEventListener('click', changeTheme);
+   
+   // Fonction pour changer le thème du site
+   function changeTheme() {
+       const body = document.body;
+       const customButton = document.getElementById('themeButton');
+  
+   
+       // Vérifiez le thème actuel
+       if (body.classList.contains('dark-theme')) {
+           // Si le thème sombre est déjà appliqué, basculez vers le thème par défaut
+           body.classList.remove('dark-theme');
+       } else {
+           // Sinon, appliquez le thème sombre
+           body.classList.add('dark-theme');
+       }
+   }
+  </script>
+      
+</body>
+</html>
