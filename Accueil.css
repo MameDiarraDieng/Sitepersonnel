@@ -65,7 +65,8 @@ nav, ul, li ,a:visited{
 }
 #Presentation img{
     margin: 50px;
-    justify-content: center;
+    justify-content: center
+    
 }
 #Parcours  {
     display: flex;
@@ -125,5 +126,12 @@ footer{
         margin-bottom: 10px;
     }
 }
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
   
