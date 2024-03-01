@@ -1,0 +1,121 @@
+body{
+    background-color: #ffe0e0;
+}
+#baniere{
+    background-image: url('Baniere.png');
+    height: 500px;
+}
+nav, ul, li {
+    margin: 0 px;
+    margin-right: 20px;
+    padding: 0;
+    list-style:none;
+    display: flex;
+    color: black;
+    
+    
+}
+nav, ul, li ,a{
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav, ul, li ,a:hover{
+    color: rgb(0, 0, 0);
+    font-family: Cambria;
+    text-decoration: overline;
+}
+nav, ul, li ,a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#fixed-nav{
+    position: fixed; 
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(165, 162, 162);
+    opacity: 1; /* Opacité initiale */
+    transition: opacity 0.5s; 
+    
+}
+#logo{
+    border-radius: 40%;
+    height: 40px;
+    border-color: grey;
+    border-style: solid;
+    margin: 0;
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+#Presentation{
+    margin: 30px;
+}
+#Presentation img{
+    margin: 50px;
+    justify-content: center;
+}
+#Parcours  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ajoutez ici les styles spécifiques pour le thème sombre */
+body.dark-theme {
+    background-color: #6e6e6e;
+    color: #f5f5f5;
+}
+#themeButton{
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        cursor:grab;
+        background-color: rgb(163, 163, 163);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+}
+#Contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#Contact img{
+    margin: 10px;
+}
+#photo{
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Rotation initiale à 0 degrés */
+    }
+    50% {
+      transform: rotate(30deg); /* Rotation à mi-chemin à 30 degrés */
+    }
+    100% {
+      transform: rotate(0deg); /* Rotation complète à 0 degré (retour) */
+    }
+  }
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}  
+  
+  
+  
+  
