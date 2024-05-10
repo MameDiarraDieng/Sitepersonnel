@@ -60,37 +60,14 @@ nav, ul, li ,a:visited{
     align-items: center;
     z-index: 9999;
 }
-
-
-#Presentation img {
-    margin-right: 20px; /* Espace entre l'image et le texte */
+#Presentation{
+    margin: 30px;
 }
-
-#Presentation h1 {
-    color: black; /* Couleur du texte */
+#Presentation img{
+    margin: 50px;
+    justify-content: center
+    
 }
-#Presentation {
-    display: flex;
-    align-items: center;
-}
-
-#photo {
-    display: inline-block; /* Pour que l'image et le texte soient côte à côte */
-    margin-right: 20px; /* Espace entre l'image et le texte */
-    vertical-align: middle; /* Pour aligner verticalement l'image */
-}
-
-#Presentation p {
-    display: inline-block; /* Pour que l'image et le texte soient côte à côte */
-    color: black; /* Couleur du texte */
-    background-color: #6e6e6e;
-    font-size: larger;
-}
-
-
-
-
-
 #Parcours  {
     display: flex;
     justify-content: center;
