@@ -60,10 +60,7 @@ nav, ul, li ,a:visited{
     align-items: center;
     z-index: 9999;
 }
-#Presentation {
-    display: flex;
-    align-items: center;
-}
+
 
 #Presentation img {
     margin-right: 20px; /* Espace entre l'image et le texte */
@@ -72,10 +69,23 @@ nav, ul, li ,a:visited{
 #Presentation h1 {
     color: black; /* Couleur du texte */
 }
+#Presentation {
+    display: flex;
+    align-items: center;
+}
+
+#photo {
+    display: inline-block; /* Pour que l'image et le texte soient côte à côte */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    vertical-align: middle; /* Pour aligner verticalement l'image */
+}
 
 #Presentation p {
+    display: inline-block; /* Pour que l'image et le texte soient côte à côte */
     color: black; /* Couleur du texte */
 }
+
+
 
 
 
