@@ -83,6 +83,8 @@ nav, ul, li ,a:visited{
 #Presentation p {
     display: inline-block; /* Pour que l'image et le texte soient côte à côte */
     color: black; /* Couleur du texte */
+    background-color: #6e6e6e;
+    font-size: larger;
 }
 
 
