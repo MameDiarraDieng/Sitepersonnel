@@ -1,137 +1,104 @@
-body{
-    background-color: #ffe0e0;
-}
-#baniere{
-    background-image: url('Baniere.png');
-    height: 500px;
-}
-nav, ul, li {
-    margin: 0 px;
-    margin-right: 20px;
-    padding: 0;
-    list-style:none;
-    display: flex;
-    color: black;
-    
-    
-}
-nav, ul, li ,a{
-    color: rgb(0, 0, 0);
-    font-family: Arial;
-    text-decoration: none;
-    margin: 5px;
-}
-
-nav, ul, li ,a:hover{
-    color: rgb(0, 0, 0);
-    font-family: Cambria;
-    text-decoration: overline;
-}
-nav, ul, li ,a:visited{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-#fixed-nav{
-    position: fixed; 
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(165, 162, 162);
-    opacity: 1; /* Opacité initiale */
-    transition: opacity 0.5s; 
-    
-}
-#logo{
-    border-radius: 40%;
-    height: 40px;
-    border-color: grey;
-    border-style: solid;
+/* Réinitialisation des marges et des rembourrages */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
+    padding: 0;
 }
-#loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden; /* Empêcher le défilement horizontal */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero section */
+#baniere {
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    background-color: #007bff;
+}
+
+/* Présentation */
+#Presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Presentation h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#Presentation img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Parcours */
+#Parcours {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Parcours img {
     width: 100%;
-    height: 100%;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-#Presentation{
-    margin: 30px;
-}
-#Presentation img{
-    margin: 50px;
-    justify-content: center
-    
-}
-#Parcours  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Ajoutez ici les styles spécifiques pour le thème sombre */
-body.dark-theme {
-    background-color: #6e6e6e;
-    color: #f5f5f5;
-}
-#themeButton{
-        border-radius: 20px;
-        padding: 10px 20px;
-        color: #fff;
-        border: none;
-        cursor:grab;
-        background-color: rgb(163, 163, 163);
-        position: absolute;
-        top: 10px;
-        right: 10px;
-}
-#Contact{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-#Contact img{
-    margin: 10px;
-}
-#photo{
-    animation: spin 4s linear infinite;
-}
-@keyframes spin {
-    0% {
-      transform: rotate(0deg); /* Rotation initiale à 0 degrés */
-    }
-    50% {
-      transform: rotate(30deg); /* Rotation à mi-chemin à 30 degrés */
-    }
-    100% {
-      transform: rotate(0deg); /* Rotation complète à 0 degré (retour) */
-    }
-  }
-footer{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}  
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-@media screen and (max-width: 768px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
 }
 
+/* Contact */
+#Contact {
+    text-align: center;
+    margin-top: 50px;
+}
 
-  
+#Contact img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
