@@ -1,104 +1,70 @@
-/* Réinitialisation des marges et des rembourrages */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
     color: #333;
-    overflow-x: hidden; /* Empêcher le défilement horizontal */
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-/* Header */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-#logo {
+  }
+  
+  header {
+    background-color: #ffcccc; /* Rose */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #logo {
     width: 100px;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style-type: none;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
-}
-
-/* Hero section */
-#baniere {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-    background-color: #007bff;
-}
-
-/* Présentation */
-#Presentation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  }
+  
+  #Presentation {
+    background-color: #f9f9f9; /* Gris clair */
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
-}
-
-#Presentation h1 {
-    color: #333;
+  }
+  
+  #Presentation h1 {
+    color: #ff6699; /* Rose */
     margin-bottom: 20px;
-}
-
-#Presentation img {
-    width: 200px;
-    margin-top: 20px;
-}
-
-/* Parcours */
-#Parcours {
+  }
+  
+  #Parcours {
+    background-color: #f3f3f3; /* Gris plus clair */
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
-}
-
-#Parcours img {
-    width: 100%;
-}
-
-/* Contact */
-#Contact {
+  }
+  
+  #Contact {
+    background-color: #ffcccc; /* Rose */
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 50px;
-}
-
-#Contact img {
-    width: 50px;
-    margin: 0 10px;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
+  }
+  
