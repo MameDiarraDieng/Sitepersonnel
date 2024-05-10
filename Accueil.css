@@ -60,14 +60,25 @@ nav, ul, li ,a:visited{
     align-items: center;
     z-index: 9999;
 }
-#Presentation{
-    margin: 30px;
+#Presentation {
+    display: flex;
+    align-items: center;
 }
-#Presentation img{
-    margin: 50px;
-    justify-content: center
-    
+
+#Presentation img {
+    margin-right: 20px; /* Espace entre l'image et le texte */
 }
+
+#Presentation h1 {
+    color: black; /* Couleur du texte */
+}
+
+#Presentation p {
+    color: black; /* Couleur du texte */
+}
+
+
+
 #Parcours  {
     display: flex;
     justify-content: center;
